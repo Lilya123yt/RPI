@@ -1,0 +1,39 @@
+.task-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 22%;
+    padding: 10px;
+    background-color: #e9f0fa;
+}
+
+.column h3 {
+    display: inline-block;
+    padding: 10px 20px; 
+    font-size: 18px; 
+    border-radius: 10px; 
+    text-align: center; 
+    font-weight: bold; 
+}
+
+.column.backlog h3 {
+    color: #555; 
+    background-color: #e0e0e0; 
+}
+
+.column.in-progress h3 {
+    color: rgb(64, 109, 192);
+    background-color: #9acee6; 
+}
+
+.column.done h3 {
+    color: #1fbe7c;
+    background-color: #89f0c5; 
+}
+
+.column.trash h3 {
+    color: #e05151;
+    background-color: #fdabab;
+}

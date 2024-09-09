@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="adding-task.css">
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="area-task.css">
+    <link rel="stylesheet" href="clean-btn.css">
+</head>
+
+<body>
+
+    <div class="header">Список задач</div>
+
+    <div class="container">
+        <h2>Новая задача</h2>
+        <div class="new-task">
+            <input type="text" placeholder="Название задачи...">
+            <button>+ Добавить</button>
+        </div>
+    </div>    
+
+    <div class="task-columns">
+        <div class="column backlog">
+            <h3>Бэклог</h3>
+            <ul>
+                <li>Выучить JS</li>
+                <li>Выучить React</li>
+                <li>Сделать домашку</li>
+            </ul>
+        </div>
+        <div class="column in-progress">
+            <h3>В процессе</h3>
+            <ul>
+                <li>Выпить смузи</li>
+                <li>Попить воды</li>
+            </ul>
+        </div>
+        <div class="column done">
+            <h3>Готово</h3>
+            <ul>
+                <li>Позвонить маме</li>
+                <li>Погладить кота</li>
+            </ul>
+        </div>
+        <div class="column trash">
+            <h3>Корзина</h3>
+            <ul>
+                <li>Сходить погулять</li>
+                <li>Прочитать Войну и Мир</li>
+            </ul>
+            <button class="clear-btn">Очистить</button>
+        </div>
+    </div>
+ 
+</body>
+
+</html>
