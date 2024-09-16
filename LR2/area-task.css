@@ -1,0 +1,79 @@
+.task-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 22%;
+    padding: 10px;
+    background-color: #e9f0fa;
+}
+
+.column h3 {
+    display: inline-block;
+    padding: 10px 20px; 
+    font-size: 18px; 
+    border-radius: 10px; 
+    text-align: center; 
+    font-weight: bold; 
+}
+
+.column.backlog h3 {
+    color: #555; 
+    background-color: #e0e0e0; 
+}
+
+.column.in-progress h3 {
+    color: rgb(64, 109, 192);
+    background-color: #9acee6; 
+}
+
+.column.done h3 {
+    color: #1fbe7c;
+    background-color: #89f0c5; 
+}
+
+.column.trash h3 {
+    color: #e05151;
+    background-color: #fdabab;
+}
+
+.column .tasks-container {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column .tasks-container li {
+    background-color: white;
+    padding: 17px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.column .tasks-container li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.column.backlog .tasks-container li::before {
+    background-color: #d3d3d3;
+}
+
+.column.in-progress .tasks-container li::before {
+    background-color: #9acee6;
+}
+
+.column.done .tasks-container li::before {
+    background-color: #65eeb5;
+}
+
+.column.trash .tasks-container li::before {
+    background-color: #e96262;
+}
